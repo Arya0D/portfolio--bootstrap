@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      .nav-link.active {
+        color: #007bff !important; /* Change to your desired primary color */
+      }
+      .navbar {
+        transition: box-shadow 0.3s ease-in-out;
+      }
+      .navbar.shadow {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      /* Adjustments for responsive layout */
+      @media (max-width: 768px) {
+        .timeline-item {
+          margin-bottom: 20px;
+        }
+        .timeline-item .card {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        filter: invert(100%);
+      }
+    </style>
+    <script src="/bootstrap/js/bootstrap.bundle.js"></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-body">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand p-1 text-primary"><i>Arya</i></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
+          <ul class="navbar-nav d-flex ms-auto">
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">Tentang saya</a>
+            </li>
+            <li class="nav-item">
+              <a href="#education" class="nav-link">Riwayat Pendidikan</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Project</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar -->
+
+    <!-- home -->
+    <div class="container-fluid" id="home">
+      <div
+        class="w-100 vh-100 d-flex flex-column text-center gap-3 justify-content-center align-items-center"
+      >
+        <h1>
+          Halo saya
+          <span class="d-block">
+            <span class="text-primary">Arya</span> Dirham Wijaya Kusumah</span
+          >
+        </h1>
+        <p>Lorem ipsum</p>
+        <div class="container">
+          <a
+            href="https://github.com/Arya0D"
+            class="text-black text-decoration-none link-primary"
+            target="_blank"
+          >
+            <i class="ri-github-fill fs-1 col"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/arya.dirham?igsh=MWU2eTN4bnUzZDEzOQ=="
+            target="_blank"
+            class="text-black text-decoration-none link-primary"
+          >
+            <i class="ri-instagram-fill fs-1 col"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- home -->
+
+    <!-- about -->
+    <div class="container" id="about">
+      <div class="row">
+        <h1 class="col text-center text-underline">TENTANG SAYA</h1>
+      </div>
+      <div class="row flex-column-reverse flex-md-row align-items-center gap-4">
+        <p class="fs-5 text-center d-none d-md-block">
+          Halo nama saya Arya Dirham Wijaya Kusumah saya adalah seorang
+          programer yang masih belajar. Saya sedang berkuliah di Politeknik
+          Negeri Cilacap Jurusan Komputer dan Bisnis Program studi D3 Teknik
+          Informatika.
+        </p>
+        <div class="col col-7">
+          <p class="fs-6 text-center d-md-none">
+            Halo nama saya Arya Dirham Wijaya Kusumah saya adalah seorang
+            programer yang masih belajar. Saya sedang berkuliah di Politeknik
+            Negeri Cilacap Jurusan Komputer dan Bisnis Program studi D3 Teknik
+            Informatika.
+          </p>
+          <div class="card">
+            <h3
+              class="card-header bg-primary text-light m-auto w-100 justify-content-center d-flex"
+            >
+              Biodata
+            </h3>
+            <table class="table table-bordered card-body">
+              <tbody>
+                <tr>
+                  <th scope="row">Nama Lengkap</th>
+                  <td>Arya Dirham Wijaya Kusumah</td>
+                </tr>
+                <tr>
+                  <th scope="row">Tempat Lahir</th>
+                  <td>Jakarta</td>
+                </tr>
+                <tr>
+                  <th scope="row">Tanggal Lahir</th>
+                  <td>22 November 2004</td>
+                </tr>
+                <tr>
+                  <th scope="row">Kuliah</th>
+                  <td>Politeknik Negeri Cilacap</td>
+                </tr>
+                <tr>
+                  <th scope="row">Jurusan</th>
+                  <td>Komputer dan Bisnis</td>
+                </tr>
+                <tr>
+                  <th scope="row">Program Studi</th>
+                  <td>D3 Teknik Informatika</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center" style="width: fitt">
+          <div class="border border-5 rounded border-primary">
+            <img src="/img/profil.jpg" style="width: 200px" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- about -->
+
+    <!-- riwayat md -->
+    <div
+      class="container-fluid vh-100 d-flex justify-content-center align-items-center w-100 d-none d-md-flex"
+      id="education"
+    >
+      <div>
+        <h1 class="text-center">RIWAYAT PENDIDIKAN</h1>
+        <div
+          class="bg-black mx-auto position-relative"
+          style="width: 2px; height: 400px"
+        >
+          <div
+            class="bg-primary position-absolute rounded-circle"
+            style="
+              width: 20px;
+              height: 20px;
+              top: 35px;
+              left: 50%;
+              transform: translateX(-50%);
+            "
+          >
+            <div
+              class="card"
+              style="position: absolute; top: 0; left: 30px; width: 300px"
+            >
+              <div class="card-body">
+                <h5 class="card-title">Sekolah Dasar</h5>
+                <p class="card-text">SD Patemon 02</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-primary position-absolute rounded-circle"
+            style="
+              width: 20px;
+              height: 20px;
+              top: 120px;
+              left: 50%;
+              transform: translateX(-50%);
+            "
+          >
+            <div
+              class="card"
+              style="position: absolute; top: 0; right: 30px; width: 350px"
+            >
+              <div class="card-body">
+                <h5 class="card-title">Sekolah Menengah Pertama</h5>
+                <p class="card-text">SMP Negeri 5 Semarang</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-primary position-absolute rounded-circle"
+            style="
+              width: 20px;
+              height: 20px;
+              top: 200px;
+              left: 50%;
+              transform: translateX(-50%);
+            "
+          >
+            <div
+              class="card"
+              style="position: absolute; top: 0; left: 30px; width: 300px"
+            >
+              <div class="card-body">
+                <h5 class="card-title">Sekolah Menengah Atas</h5>
+                <p class="card-text">SMA Muhammadiyah 1 Cilacap</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-primary position-absolute rounded-circle"
+            style="
+              width: 20px;
+              height: 20px;
+              top: 300px;
+              left: 50%;
+              transform: translateX(-50%);
+            "
+          >
+            <div
+              class="card"
+              style="position: absolute; top: 0; right: 30px; width: 250px"
+            >
+              <div class="card-body">
+                <h5 class="card-title">Kuliah</h5>
+                <p class="card-text">Politeknik Negeri Cilacap</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- riwayat md -->
+
+    <!-- riwayat -->
+    <div
+      class="container-fluid vh-100 d-flex justify-content-center align-items-center w-100 d-md-none"
+      id="education"
+    >
+      <div>
+        <h1 class="text-center">RIWAYAT PENDIDIKAN</h1>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Sekolah Dasar</h5>
+                <p class="card-text">SD Patemon 02</p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Sekolah Menengah Pertama</h5>
+                <p class="card-text">SMP Negeri 5 Semarang</p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Sekolah Menengah Atas</h5>
+                <p class="card-text">SMA Muhammadiyah 1 Cilacap</p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Kuliah</h5>
+                <p class="card-text">Politeknik Negeri Cilacap</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- riwayat -->
+
+    <!-- project -->
+    <div class="container" id="projects">
+      <div class="row">
+        <h1 class="col text-center">PROJECT</h1>
+      </div>
+      <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/img/react.png" class="d-block w-100" alt="Project 1" />
+            <div class="">
+              <div class="bg-body p-2">
+                <!-- Added wrapping div for background -->
+                <div class="container-fluid">
+                  <h4 class="row justify-content-center">React.js Portfolio</h4>
+                  <div class="row gap-4">
+                    <button class="btn btn-dark col">
+                      <a
+                        href="https://github.com/Arya0D/Portfolio"
+                        target="_blank"
+                        class="text-light text-decoration-none fs-3"
+                      >
+                        <i class="ri-github-fill"></i> Repository
+                      </a>
+                    </button>
+                    <button class="btn btn-dark col fs-3">
+                      <a
+                        href="https://portfolio-arya-dirham.vercel.app/"
+                        target="_blank"
+                        class="text-light text-decoration-none fs-3"
+                        >Demo</a
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="container border rounded"
+              style="width: 300px; height: 300px"
+            >
+              <div class="row text-center fs-1 p-1">
+                <i class="ri-github-fill"></i>
+                <p>@Arya0D</p>
+              </div>
+              <div class="row">
+                <p class="text-center">Lihat projek saya lainnya</p>
+                <button class="btn btn-dark col">
+                  <a
+                    href="https://github.com/Arya0D"
+                    target="_blank"
+                    class="text-light text-decoration-none fs-3"
+                  >
+                    Github
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#projectCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#projectCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- project -->
+
+    <!-- footer -->
+    <div
+      class="w-100 h-100 container-fluid bg-dark text-light text-center"
+      style="margin-top: 200px"
+    >
+      <div class="row p-2">
+        <p class="col justify-content-center align-items-center m-auto">
+          Terimaksih sudah melihat portfolio saya
+        </p>
+      </div>
+    </div>
+    <!-- footer -->
+    <script>
+      // JavaScript for adding shadow to navbar on scroll
+      window.addEventListener("scroll", function () {
+        var navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("shadow", window.scrollY > 0);
+      });
+
+      // JavaScript for smooth scrolling when clicking on links
+      document.querySelectorAll("a.nav-link").forEach((link) => {
+        link.addEventListener("click", function (event) {
+          event.preventDefault();
+          // Remove 'active' class from all links
+          document
+            .querySelectorAll("a.nav-link")
+            .forEach((link) => link.classList.remove("active"));
+          // Add 'active' class to the clicked link
+          this.classList.add("active");
+          const targetId = this.getAttribute("href").substring(1);
+          document
+            .getElementById(targetId)
+            .scrollIntoView({ behavior: "smooth" });
+        });
+      });
+    </script>
+  </body>
+</html>
